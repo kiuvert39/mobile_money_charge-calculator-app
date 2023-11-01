@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#004f71"
     android:onClick="whatsapp"
     tools:context=".MainActivity">
 
@@ -12,42 +12,33 @@
         android:id="@+id/textView"
         android:layout_width="282dp"
         android:layout_height="74dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="cursive"
         android:gravity="center_horizontal|center_vertical"
+        android:shadowRadius="10"
         android:text="MoMo charge App"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="113dp"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.293" />
 
     <Button
         android:id="@+id/checkCharges"
         android:layout_width="205dp"
         android:layout_height="60dp"
+        android:background="#70470B"
         android:onClick="checkCharges"
+
         android:text="@string/check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
+        app:layout_constraintVertical_bias="0.739" />
 
     <TextView
         android:layout_width="94dp"
@@ -64,66 +55,71 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.591" />
 
+
     <TextView
         android:id="@+id/charges"
         android:layout_width="90dp"
         android:layout_height="29dp"
         android:gravity="fill_horizontal|left|center_vertical"
+        android:paddingLeft="31dp"
         android:text="0"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578" />
-
+        app:layout_constraintVertical_bias="0.589" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="165dp"
-        android:layout_height="50dp"
+        android:layout_width="177dp"
+        android:layout_height="61dp"
         android:onClick="whatsapp"
         android:text="whatsapp"
         android:textColor="#000000"
+        app:circularflow_defaultRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.889" />
+        app:layout_constraintVertical_bias="0.925"
+        />
 
     <EditText
         android:id="@+id/amount"
         android:layout_width="315dp"
         android:layout_height="67dp"
+        android:backgroundTint="#000000"
         android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Amount"
         android:inputType="numberSigned"
+        android:paddingLeft="18dp"
         android:textColor="#000000"
-        android:textColorHighlight="#000000"
+        android:textColorHighlight="#231E1E"
         android:textColorHint="#000000"
         android:textColorLink="#000000"
-        android:textSize="20sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.466" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="105dp"
-        android:layout_height="49dp"
-        android:gravity="center_horizontal|left|center_vertical"
-        android:text="Amount"
-        android:textColor="#000000"
-        android:textSize="20sp"
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="222dp"
+        android:layout_height="137dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/momo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
