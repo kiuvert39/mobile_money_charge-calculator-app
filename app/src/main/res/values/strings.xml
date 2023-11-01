@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">momoChargeApp</string>
+    <string name="charges">Charges: %s</string>
+    <string name="check">Check</string>
+</resources>
